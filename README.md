@@ -2,3 +2,5 @@
 
 You can check out the live demo here: http://karthik-bloccit.herokuapp.com
 Let the fun begin! 
+
+Please do the setup according to config/application.yml
