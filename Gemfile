@@ -39,6 +39,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'figaro'
+
+gem 'pundit'
 # Sets up environment variables to handle sensitive information.
 
 # Use ActiveModel has_secure_password
