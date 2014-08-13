@@ -38,7 +38,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-gem 'figaro'
+gem 'figaro', '>= 1.0.0.rc1'
 
 gem 'pundit'
 # Sets up environment variables to handle sensitive information.
