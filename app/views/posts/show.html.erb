@@ -15,14 +15,7 @@
     <% end %>
   </div>
 </div>
- <% if current_user.image? %>
  <div class="form-group">
-     <p>Current Image</p>
-     <%= image_tag( current_user.image.profile.url ) %>
+     <p>Post Image</p>
+     <%= image_tag(@post.image_url) %>
    </div>
- <% end %>
- <div class="form-group">
-   <%= f.label :image %>
-   <%= f.file_field :image %>
-   <%= f.hidden_field :image_cache %>
- </div>
