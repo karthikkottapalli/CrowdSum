@@ -35,7 +35,7 @@ users = User.all
     user:   users.sample,
     topic:  topics.sample,
     title:  Faker::Lorem.sentence,
-    body:   Faker::Lorem.paragraph
+    body:   Faker::Lorem.paragraph,
   )
 end
 posts = Post.all
@@ -43,9 +43,9 @@ posts = Post.all
 # Create Comments
 100.times do
   Comment.create(
-    # user: users.sample,   # we have not yet associated Users with Comments
+    user: users.sample,   # we have not yet associated Users with Comments
     post: posts.sample,
-    body: Faker::Lorem.paragraph
+    body: Faker::Lorem.sentence
   )
 end
 

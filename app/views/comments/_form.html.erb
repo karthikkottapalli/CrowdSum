@@ -1,0 +1,10 @@
+<%= form_for [topic, post, post.comments.build] do |f| %>
+  <p>
+    <%= f.label :body %>
+    <%= f.text_field :body %>
+  </p>
+  <div class="form-group">
+    <%= f.submit "Create Comment", class: 'btn btn-grey' %>
+  </div>
+<% end %>
+ 

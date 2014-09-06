@@ -18,4 +18,10 @@
  <div class="form-group">
      <p>Post Image</p>
      <%= image_tag(@post.image_url) %>
-   </div>
+ </div>
+ <div class="col-md-8">
+     <%= render partial: 'comments/comment', locals: { post: @post } %>      
+</div>
+ <div class="col-md-8">
+     <%= render partial: 'comments/form', locals: { topic: @topic, post: @post } %>      
+</div>
