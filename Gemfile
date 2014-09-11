@@ -62,3 +62,7 @@ gem 'pundit'
  gem 'will_paginate', '~> 3.0.5'
  gem 'binding_of_caller'
  gem 'better_errors'
+
+ group :test do
+  gem 'rspec-rails'
+ end
