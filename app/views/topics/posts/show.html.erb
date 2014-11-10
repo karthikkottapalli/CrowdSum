@@ -31,7 +31,9 @@
      <%= image_tag(@post.image_url) %>
  </div>
  <div class="col-md-8">
-     <%= render partial: 'comments/comment', locals: { post: @post, comments: @post.comments } %>      
+     <%= render partial: 'comments/comment', collection: @post.comments %>
+
+     <%#= render partial: 'comments/comment', locals: { post: @post, comments: @post.comments } %>      
  </div>
  <div class="col-md-8">
      <%= render partial: 'comments/form', locals: { topic: @topic, post: @post} %>      

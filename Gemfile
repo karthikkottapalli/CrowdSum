@@ -63,7 +63,9 @@ gem 'pundit'
  gem 'binding_of_caller'
  gem 'better_errors'
 
- group :test do
+group :test do
   gem 'rspec-rails'
   gem 'capybara'
- end
+  gem 'database_cleaner'
+  gem 'factory_girl_rails', '~> 4.0'
+end
